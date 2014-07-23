@@ -1,10 +1,11 @@
 <?php
 /*
-  Plugin Name: GSY Meta Box For Carousel
-  Description: This plugin provides a way that let you choose a page in order to be used for carousel
-  Version: 1.0
-  Author: Georgi Yankov
-  Author URI: http://gsy-design.com
+ * Plugin Name: GSY Meta Box For Carousel
+ * Plugin URI: https://github.com/georgi-yankov/gsy-meta-box-for-carousel
+ * Description: This plugin provides a way that let you choose a page in order to be used for carousel
+ * Version: 1.0
+ * Author: Georgi Yankov
+ * Author URI: http://gsy-design.com
  */
 
 /*
