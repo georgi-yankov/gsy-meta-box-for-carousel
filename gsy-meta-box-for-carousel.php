@@ -13,7 +13,7 @@
  * Below every page you'll see a checkbox with the notice in red "Check this if
  * you want the page to appear in the carousel". You can check the checkbox or
  * leave uncheked, depends on the result you wish you have.
- * 
+ *
  * And here is the way to use that checkbox afterwords:
  * <?php
  * if ((get_post_meta($post->ID, 'gsy_carousel_meta_box_check', true)) AND
@@ -36,7 +36,7 @@ function gsy_carousel_meta_box_cb($post) {
     $check = isset($values['gsy_carousel_meta_box_check']) ? esc_attr($values['gsy_carousel_meta_box_check'][0]) : '';
     wp_nonce_field('gsy_carousel_meta_box_nonce', 'meta_box_nonce');
     ?>
-    <p style="color: #e80000">
+    <p>
         <input type="checkbox" name="gsy_carousel_meta_box_check" id="gsy_carousel_meta_box_check" <?php checked($check, 'on'); ?> />
         <label for="gsy_carousel_meta_box_check">Check this if you want the page to appear in the carousel</label>
     </p>
@@ -69,3 +69,13 @@ function gsy_carousel_meta_box_save($post_id) {
     $chk = ( isset($_POST['gsy_carousel_meta_box_check']) && $_POST['gsy_carousel_meta_box_check'] ) ? 'on' : 'off';
     update_post_meta($post_id, 'gsy_carousel_meta_box_check', $chk);
 }
+
+/**
+ * Add css for the plugin
+ */
+function gsy_carousel_meta_box_add_css() {
+    $style_src = plugins_url('gsy-meta-box-for-carousel.css', __FILE__);
+    wp_enqueue_style('gsy-meta-box-for-carousel', $style_src);
+}
+
+add_action('admin_head', 'gsy_carousel_meta_box_add_css');
