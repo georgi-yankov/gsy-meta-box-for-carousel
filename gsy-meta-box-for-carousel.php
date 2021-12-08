@@ -5,7 +5,7 @@
  * Description: This plugin provides a way that let you choose a page in order to be used for carousel
  * Version: 1.0
  * Author: Georgi Yankov
- * Author URI: http://gsy-design.com
+ * Author URI: https://gsy-web.com/
  */
 
 /*
