@@ -10,7 +10,7 @@ This plugin provides a way that let you choose a page in order to be used for ca
 
  Below every page you'll see a checkbox with the notice in red "Check this if
  you want the page to appear in the carousel". You can check the checkbox or
- leave uncheked, depends on the result you wish you have.
+ leave uncheked, depends on the result you wish to have.
 
 == Installation ==
 
